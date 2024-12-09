@@ -1,4 +1,3 @@
-// src/components/Projects.tsx
 
 import { motion } from "framer-motion";
 
@@ -28,12 +27,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 bg-dark"> {/* Fondo oscuro para la sección */}
+    <section id="projects" className="py-16 bg-dark"> 
       <div className="max-w-7xl mx-auto px-6">
-        {/* Encabezado */}
+        
         <h2 className="text-4xl font-heading text-primary text-center">Proyectos</h2>
 
-        {/* Contenedor de proyectos */}
+        
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -43,16 +42,16 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              {/* Imagen */}
+              
               <img src={project.img} alt={project.title} className="rounded-lg mb-4" />
 
-              {/* Título */}
+              
               <h3 className="text-2xl font-semibold text-primary">{project.title}</h3>
 
-              {/* Descripción */}
+              
               <p className="mt-2 text-gray-600">{project.description}</p>
 
-              {/* Tecnologías */}
+              
               <div className="mt-4 flex space-x-2">
                 {project.techs.map((tech) => (
                   <span
@@ -64,7 +63,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Enlace */}
+              
               <a
                 href={project.link}
                 className="mt-6 block text-secondary font-bold hover:underline"

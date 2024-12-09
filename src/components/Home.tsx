@@ -11,7 +11,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Fondo animado */}
+      
       <div className="absolute inset-0 z-0">
         <Player
           autoplay
@@ -27,24 +27,24 @@ const Home = () => {
         />
       </div>
 
-      {/* Contenido principal */}
+      
       <div className="relative z-0 flex flex-col items-center justify-center space-y-6 px-4 text-center">
-        {/* Título */}
+       
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-heading text-black mb-4">
           Bienvenido a mi Portafolio
         </h1>
 
-        {/* Animación Lottie */}
+        
         <div className="lottie-container w-full max-w-[220px] sm:max-w-[280px] md:max-w-[350px] mb-4 sm:mb-6 mt-0 sm:mt-4 md:mt-6">
           <Player autoplay loop src={animationData} className="w-full" />
         </div>
 
-        {/* Descripción */}
+        
         <p className="text-sm sm:text-base md:text-lg text-black mb-4">
           Claudio Casagrande es un Fullstack Developer
         </p>
 
-        {/* Tecnologías */}
+        
         <div className="tech-stack flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
           <img
             src="https://i.imgur.com/oh50tWs.png"
@@ -69,7 +69,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Triángulo diagonal al final */}
+      
       <div className="absolute bottom-0 w-full h-[60px] sm:h-[80px] bg-transparent">
         <div className="w-full h-full clip-triangle bg-primary"></div>
       </div>

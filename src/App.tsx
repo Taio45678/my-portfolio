@@ -1,7 +1,7 @@
 
 import "./App.css";
 
-// Importa tus secciones
+
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Header flotante */}
+      
       <header className="fixed top-0 w-full z-10 bg-white shadow-md">
         <nav className="flex justify-center gap-6 py-4">
           <button onClick={() => scrollToSection("home")} className="hover:scale-110 transition-transform">
@@ -35,7 +35,7 @@ function App() {
         </nav>
       </header>
 
-      {/* Secciones principales */}
+      
       <main>
         <section id="home">
           <Home />

@@ -1,4 +1,4 @@
-// src/components/Hero.tsx
+
 
 import { motion } from "framer-motion";
 
@@ -8,10 +8,10 @@ const Hero = () => {
       id="hero"
       className="h-screen bg-dark bg-center flex flex-col items-center justify-center text-center"
       style={{
-        backgroundImage: "url('/path-to-your-image.jpg')", // Aquí colocamos la imagen de fondo
+        backgroundImage: "url('/path-to-your-image.jpg')", 
       }}
     >
-      {/* Texto principal */}
+      
       <motion.h1
         className="text-6xl md:text-7xl font-heading text-white drop-shadow-md"
         initial={{ opacity: 0, y: -30 }}
@@ -21,7 +21,7 @@ const Hero = () => {
         Bienvenidos a mi mundo
       </motion.h1>
 
-      {/* Subtítulo */}
+      
       <motion.p
         className="mt-6 text-lg md:text-2xl text-gray-200"
         initial={{ opacity: 0, y: 30 }}
@@ -31,7 +31,7 @@ const Hero = () => {
         Desarrollo web, diseño moderno y soluciones digitales.
       </motion.p>
 
-      {/* Tecnologías */}
+     
       <motion.div
         className="flex mt-8 space-x-4"
         initial={{ opacity: 0 }}

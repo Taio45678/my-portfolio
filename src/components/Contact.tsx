@@ -1,4 +1,4 @@
-// src/components/Contact.tsx
+
 
 import { motion } from "framer-motion";
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
@@ -7,13 +7,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        {/* Encabezado */}
+       
         <h2 className="text-4xl font-heading text-primary">Contáctame</h2>
         <p className="mt-4 text-lg text-gray-600">
           Estoy disponible para proyectos, colaboraciones y oportunidades laborales.
         </p>
 
-        {/* Redes sociales */}
+        
         <motion.div
           className="mt-8 flex justify-center space-x-6"
           initial={{ opacity: 0 }}

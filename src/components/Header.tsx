@@ -1,11 +1,11 @@
-// src/components/Header.tsx
+
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white">
   <nav className="p-4">
-        {/* Logo */}
+        
         <div className="text-3xl font-bold font-heading text-primary">Logo</div>
-        {/* Links */}
+        
         <ul className="flex space-x-6">
           {["Home", "About", "Projects", "Contact"].map((item) => (
             <li key={item}>
