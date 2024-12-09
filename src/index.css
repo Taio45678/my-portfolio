@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-background {
+  background: url('https://www.example.com/birds-pattern.png') repeat-x; /* Imagen de fondo que simula aves volando */
+  animation: moveBackground 60s linear infinite;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f1e7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
