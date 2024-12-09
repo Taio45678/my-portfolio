@@ -14,12 +14,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 /* Triángulo para crear el corte visual */
-.triangle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-bottom: 100px solid var(--color-primary); /* Usamos el color principal */
+/* Estilo para el triángulo diagonal */
+.clip-triangle {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
+
