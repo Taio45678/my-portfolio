@@ -18,4 +18,19 @@ h1, h2, h3, h4, h5, h6 {
 .clip-triangle {
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
+@media (max-width: 768px) {
+  .lottie-container {
+    max-width: 200px;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack img {
+    width: 30px;
+    height: 30px;
+  }
+}
 

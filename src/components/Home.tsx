@@ -6,7 +6,7 @@ import circuitBackground from "../assets/Animation - 1733753597766.json";
 const Home = () => {
   return (
     <motion.div
-      className="relative min-h-screen flex items-center justify-center text-text pt-24 bg-secondary"
+      className="relative min-h-screen flex flex-col items-center justify-center text-text pt-16 bg-secondary"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -28,42 +28,49 @@ const Home = () => {
       </div>
 
       {/* Contenido principal */}
-      <div className="relative z-0 flex flex-col items-center space-y-10 text-center">
-        <div className="lottie-container w-full max-w-sm mb-10">
-          <Player autoplay loop src={animationData} className="w-full" />
-        </div>
-        <h1 className="text-4xl md:text-5xl font-heading text-black z-10">
+      <div className="relative z-0 flex flex-col items-center justify-center space-y-6 px-4 text-center">
+        {/* Título */}
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-heading text-black mb-4">
           Bienvenido a mi Portafolio
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-black z-10">
+
+        {/* Animación Lottie */}
+        <div className="lottie-container w-full max-w-[220px] sm:max-w-[280px] md:max-w-[350px] mb-4 sm:mb-6 mt-0 sm:mt-4 md:mt-6">
+          <Player autoplay loop src={animationData} className="w-full" />
+        </div>
+
+        {/* Descripción */}
+        <p className="text-sm sm:text-base md:text-lg text-black mb-4">
           Claudio Casagrande es un Fullstack Developer
         </p>
-        <div className="tech-stack mt-6 flex justify-center space-x-8 z-10">
+
+        {/* Tecnologías */}
+        <div className="tech-stack flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
           <img
             src="https://i.imgur.com/oh50tWs.png"
             alt="TS"
-            className="w-12 h-12"
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
           <img
             src="https://i.imgur.com/aU8DBJ2.png"
             alt="NestJS"
-            className="w-12 h-12"
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
           <img
             src="https://i.imgur.com/uljhJS5.png"
             alt="React"
-            className="w-12 h-12"
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
           <img
             src="https://i.imgur.com/LALNp3B.png"
             alt="JS"
-            className="w-12 h-12"
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
         </div>
       </div>
 
       {/* Triángulo diagonal al final */}
-      <div className="absolute bottom-0 w-full h-[100px] bg-transparent">
+      <div className="absolute bottom-0 w-full h-[60px] sm:h-[80px] bg-transparent">
         <div className="w-full h-full clip-triangle bg-primary"></div>
       </div>
     </motion.div>
